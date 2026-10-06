@@ -1,0 +1,858 @@
+/* =========================================================
+   STUDENT PORTAL
+   BURGUNDY + CREAM + CAMEL THEME
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf5 0%,
+            #f8eee9 50%,
+            #fffdf9 100%
+        );
+
+    color: #2d2220;
+
+    font-family:
+        'DM Sans',
+        Arial,
+        sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2d2220;
+
+    font-family:
+        'Playfair Display',
+        Georgia,
+        serif;
+
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: #756866;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    min-height: 70px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #651832,
+            #7a1f3d,
+            #8b2949
+        ) !important;
+
+    box-shadow:
+        0 4px 20px rgba(101, 24, 50, 0.20);
+
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+
+    font-family:
+        'Playfair Display',
+        Georgia,
+        serif;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+}
+
+.navbar-brand:hover {
+    color: #f6d9a8 !important;
+}
+
+.navbar .btn {
+    margin-left: 8px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container {
+    position: relative;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.card {
+    border: none !important;
+
+    border-radius: 20px !important;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 35px rgba(78, 38, 29, 0.10);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover {
+    box-shadow:
+        0 15px 40px rgba(78, 38, 29, 0.14);
+}
+
+.card-body {
+    padding: 32px;
+}
+
+.card h2 {
+    color: #651832;
+
+    font-weight: 700;
+
+    letter-spacing: -0.3px;
+}
+
+.card h5 {
+    color: #7a1f3d;
+
+    font-family:
+        'DM Sans',
+        Arial,
+        sans-serif;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FORM LABEL
+========================================================= */
+
+.form-label {
+    color: #392b29;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   FORM INPUT
+========================================================= */
+
+.form-control {
+    min-height: 48px;
+
+    border: 1px solid #dfd0c6 !important;
+
+    border-radius: 10px !important;
+
+    background-color: #fffaf6 !important;
+
+    color: #2d2220 !important;
+
+    font-family:
+        'DM Sans',
+        Arial,
+        sans-serif;
+
+    font-size: 0.95rem;
+
+    padding: 12px 15px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.form-control::placeholder {
+    color: #a69791;
+}
+
+.form-control:hover {
+    border-color: #c9a66b !important;
+}
+
+.form-control:focus {
+    background-color: #ffffff !important;
+
+    border-color: #7a1f3d !important;
+
+    box-shadow:
+        0 0 0 4px rgba(122, 31, 61, 0.10) !important;
+
+    outline: none;
+}
+
+
+/* =========================================================
+   BUTTON - GENERAL
+========================================================= */
+
+.btn {
+    border-radius: 10px !important;
+
+    min-height: 44px;
+
+    padding: 10px 20px;
+
+    font-family:
+        'DM Sans',
+        Arial,
+        sans-serif;
+
+    font-size: 0.92rem;
+
+    font-weight: 600;
+
+    border: none;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   PRIMARY - BURGUNDY
+========================================================= */
+
+.btn-primary {
+    background:
+        linear-gradient(
+            135deg,
+            #651832,
+            #7a1f3d
+        ) !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 5px 15px rgba(101, 24, 50, 0.22);
+}
+
+.btn-primary:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #531329,
+            #651832
+        ) !important;
+
+    box-shadow:
+        0 8px 20px rgba(101, 24, 50, 0.28);
+}
+
+
+/* =========================================================
+   SUCCESS - SAGE GREEN
+========================================================= */
+
+.btn-success {
+    background:
+        linear-gradient(
+            135deg,
+            #58745b,
+            #6f8c70
+        ) !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 5px 15px rgba(88, 116, 91, 0.18);
+}
+
+.btn-success:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #49624c,
+            #58745b
+        ) !important;
+}
+
+
+/* =========================================================
+   DANGER
+========================================================= */
+
+.btn-danger {
+    background:
+        linear-gradient(
+            135deg,
+            #a83232,
+            #c44747
+        ) !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 5px 15px rgba(168, 50, 50, 0.18);
+}
+
+.btn-danger:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #8f2828,
+            #a83232
+        ) !important;
+}
+
+
+/* =========================================================
+   SECONDARY
+========================================================= */
+
+.btn-secondary {
+    background: #eee5df !important;
+
+    color: #4b3834 !important;
+}
+
+.btn-secondary:hover {
+    background: #e2d5cc !important;
+}
+
+
+/* =========================================================
+   DARK
+========================================================= */
+
+.btn-dark {
+    background:
+        linear-gradient(
+            135deg,
+            #2d2220,
+            #463633
+        ) !important;
+
+    color: #ffffff !important;
+}
+
+.btn-dark:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #201716,
+            #2d2220
+        ) !important;
+}
+
+
+/* =========================================================
+   WARNING / GOLD
+========================================================= */
+
+.btn-warning {
+    background:
+        linear-gradient(
+            135deg,
+            #b88a45,
+            #c9a66b
+        ) !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 5px 15px rgba(184, 138, 69, 0.20);
+}
+
+.btn-warning:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #a47739,
+            #b88a45
+        ) !important;
+}
+
+
+/* =========================================================
+   LIGHT
+========================================================= */
+
+.btn-light {
+    background: #fffaf5 !important;
+
+    color: #7a1f3d !important;
+
+    border: 1px solid #eadbd0 !important;
+}
+
+.btn-light:hover {
+    background: #f8eee7 !important;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-responsive {
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    border: 1px solid #e5d9d1;
+}
+
+.table {
+    margin-bottom: 0;
+
+    background: #ffffff;
+
+    vertical-align: middle;
+}
+
+.table thead th {
+    background:
+        linear-gradient(
+            135deg,
+            #651832,
+            #7a1f3d
+        ) !important;
+
+    color: #ffffff !important;
+
+    border: none !important;
+
+    padding: 15px 14px;
+
+    font-size: 0.88rem;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.table tbody td {
+    color: #4a3b38;
+
+    padding: 14px;
+
+    border-color: #eee5df;
+
+    font-size: 0.9rem;
+}
+
+.table tbody tr {
+    transition:
+        background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #fff8f2;
+}
+
+
+/* =========================================================
+   ALERTS
+========================================================= */
+
+.alert {
+    border: none !important;
+
+    border-radius: 12px !important;
+
+    padding: 14px 17px;
+
+    font-size: 0.9rem;
+
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #edf5ee !important;
+
+    color: #416346 !important;
+}
+
+.alert-danger {
+    background-color: #fff0ef !important;
+
+    color: #a32e2e !important;
+}
+
+.alert-warning {
+    background-color: #fff7e8 !important;
+
+    color: #8d682c !important;
+}
+
+.alert-info {
+    background-color: #f5eee8 !important;
+
+    color: #6d493e !important;
+}
+
+
+/* =========================================================
+   PROFILE INFO
+========================================================= */
+
+.profile-info {
+    background: #fffaf6;
+
+    border: 1px solid #eadbd0;
+
+    border-radius: 12px;
+
+    padding: 14px 16px;
+
+    color: #493936;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   CODE BLOCK
+========================================================= */
+
+pre {
+    border-radius: 12px !important;
+
+    border: 1px solid #e5d9d1;
+
+    background: #faf5f1 !important;
+
+    color: #2d2220;
+
+    overflow-x: auto;
+
+    padding: 18px !important;
+}
+
+pre code {
+    color: #7a1f3d;
+
+    font-family:
+        Consolas,
+        Monaco,
+        monospace;
+
+    font-size: 0.88rem;
+}
+
+
+/* =========================================================
+   HR
+========================================================= */
+
+hr {
+    border: none;
+
+    border-top: 1px solid #e8ddd6;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   TEXT MUTED
+========================================================= */
+
+.text-muted {
+    color: #8b7b75 !important;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.page-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.page-header h2 {
+    margin-bottom: 0;
+
+    color: #651832;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.action-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+.action-buttons .btn {
+    min-height: 36px;
+
+    padding: 7px 13px;
+
+    font-size: 0.82rem;
+}
+
+
+/* =========================================================
+   FEATURE BOX
+========================================================= */
+
+.feature-box {
+    background: #ffffff;
+
+    border: 1px solid #eadbd0;
+
+    border-radius: 16px;
+
+    padding: 22px;
+
+    height: 100%;
+
+    box-shadow:
+        0 6px 20px rgba(78, 38, 29, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(78, 38, 29, 0.10);
+}
+
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.badge {
+    border-radius: 8px;
+
+    padding: 6px 10px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4ede8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c8b4a8;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a88d7e;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    .card-body {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.15rem;
+    }
+
+    .page-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .table {
+        min-width: 750px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+    .card {
+        border-radius: 15px !important;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .navbar {
+        min-height: 62px;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar .btn {
+        padding: 7px 12px;
+
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        min-height: 42px;
+
+        padding: 9px 15px;
+    }
+
+    .d-flex.gap-2 {
+        flex-wrap: wrap;
+    }
+
+    .d-flex.gap-2 .btn {
+        flex: 1;
+    }
+
+    .form-control {
+        min-height: 46px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
